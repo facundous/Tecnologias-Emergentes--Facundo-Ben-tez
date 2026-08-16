@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" Content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="general">
+            <div class="marco">
+                <h1>Generador de contraseñas</h1>
+                <input id="claves" type="text" disabled>
+                <div class="rango">
+                    <label for="min-length">6</label>
+                    <input id="rango" type="range" min="6" max="20" step="1" value="6">
+                    <label for="max-length">20</label>
+
+                </div>
+                <div class="configuracion">
+                    <div class="checkbox">
+                        <input id="mayusculas" type="checkbox" name="mayusculas" checked>
+                        <label for="mayusculas">Incluir mayusculas</label>
+
+                    </div>
+                    <div class="checkbox">
+                        <input id="minusculas" type="checkbox" name="minusculas" checked>
+                        <label for="minusculas">Incluir minusculas</label>
+                        
+                    </div>
+                    <div class="checkbox">
+                        <input id="numeros" type="checkbox" name="numeros" checked>
+                        <label for="numeros">Incluir numeros</label>
+                        
+                    </div>
+                    <div class="checkbox">
+                        <input id="simbolos" type="checkbox" name="simbolos" checked>
+                        <label for="simbolos">Incluir simbolos</label>
+                        
+                    </div>
+                    <button id="boton-generador" onclick="validar()">
+                        Generador contraseña
+                    </button>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </body>
+</html>
